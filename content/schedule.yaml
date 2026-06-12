@@ -147,3 +147,12 @@ schedule:
         ends: 13:00
         title: "Concluding remarks, general Q&A, and where to go from here"
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
+
+  - title: "Optional: Bring your own code session"
+    date: "TBD"
+    sessions:
+      - starts: TBD
+        ends: TBD
+        title: Bring your own code and discuss and ask
+        subtitle: |
+          You can also join this session if you have not attended the workshop.
