@@ -150,7 +150,7 @@ schedule:
 
 #  - title: "Optional: Bring your own code session"
 #    date: "TBD"
-    sessions:
+#    sessions:
 #      - starts: TBD
 #        ends: TBD
 #        title: Bring your own code and discuss and ask
