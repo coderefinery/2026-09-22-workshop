@@ -51,11 +51,11 @@ logos = [
 ]
 
 # adapt this
-registration_link = "https://indico.neic.no/event/XXX/"
+registration_link = "https://indico.neic.no/event/297/"
 source_repo = "https://github.com/coderefinery/2026-09-22-workshop"
 
 # uncomment as soon as registration opens
-# registration_is_open = true
+registration_is_open = true
 
 # uncomment as soon as registration closes
 # registration_is_closed = true
