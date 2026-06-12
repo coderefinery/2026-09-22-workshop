@@ -2,7 +2,7 @@
 
 # this variable has to be set but it is not used
 # inside the templates (end in '/')
-base_url = "https://coderefinery.github.io/2025-09-22-workshop/"
+base_url = "https://coderefinery.github.io/2026-09-22-workshop/"
 
 # When adapting the title, do not forget to also adjust base_url above
 title = "CodeRefinery Workshop, September 22–24 and September 29–October 1, 2026"
