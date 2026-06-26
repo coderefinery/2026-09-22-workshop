@@ -35,8 +35,8 @@ provide us with the following **three text documents sent from your university e
    However any other personal reflection is welcome. Evaluation criteria: we
    expect reflections that are related to the content of each of the six days.
 
-The three documents should be sent to **EMAIL** by **DATE**.
-Certificates will be issued by **DATE**.
+The three documents should be sent to `scip@aalto.fi` by  October 30, 2026.
+Certificates will be issued by November 30, 2026.
 Clearly name each document with your name (and student number for Aalto University students).
 You must use your university email to submit your course materials.
 We do not provide certificates to people who are not
