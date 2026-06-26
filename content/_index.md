@@ -32,39 +32,49 @@ If you want to "bring your own classroom", get in contact (support(at)coderefine
 To join any of the below mentioned groups, please sign up to the CodeRefinery workshop with your organizational e-mail address (or mention in the free form field that you would like to join one of the local groups). We will soon reach out to share more information about the local groups. Please also let us know if you want your local group to be listed here. 
 
 We collect here the exercise groups that we know:
-- ...
+
+- Aalto University, Otaniemi, Espoo, Finland
+- University of Oslo, Norway
+- ...and yours?
 
 
 ## Instructors
 
-- ...
-
+- Blazej Baczkowski
+- Radovan Bast
+- Federico Bianchini
+- Enrico Glerean
+- Diana Iusan
+- Susa Merz
+- Michele Mesiti
+- Ashwin Mohanan
+- Hemanadhan Myneni
+- Thomas Pfau
+- Jarno Rantaharju
+- Sabry Razick
+- Frankie Robertson
+- Bahareh Tasdighi
+- Oskar Taubert
+- Anja Virkkunen
 
 ## Workshop organizers
 
-- ...
-
+- Enrico Glerean
+- Diana Iusan
+- Samantha Wittke
 
 ## On-boarding
 
-- ...
-
-
-## Outreach
-
-- ...
-
+- Richard Darst
+- Samantha Wittke
 
 ## Recording and broadcasting
 
-- ...
-
+- Patricia Hernández León
+- Nguyen Luong
 
 ## Local organizers and team leads
 
-- ...
+- TBD
 
 
-## Collaborative notes managers
-
-- ...
