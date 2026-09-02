@@ -35,6 +35,7 @@ We collect here the exercise groups that we know:
 
 - Aalto University, Otaniemi, Espoo, Finland
 - University of Oslo, Norway
+- [Karlsruher Institut für Technologie, Karlsruhe, Germany](https://indico.kit.edu/e/cr2026ip ) 
 - ...and yours?
 
 
