@@ -33,8 +33,9 @@ To join any of the below mentioned groups, please sign up to the CodeRefinery wo
 
 We collect here the exercise groups that we know:
 
-- Aalto University, Otaniemi, Espoo, Finland
+- LUMI AI Factory hub, Otaniemi, Espoo, Finland
 - University of Oslo, Norway
+- University of Iceland, Reykjavík, Iceland
 - Karlsruher Institut für Technologie, Karlsruhe, Germany
   - Local in-person exercise and support session for days 1-5 at the Scientific Computing Center in Campus South, Karlsruhe. Please register separately at [indico.kit.edu](https://indico.kit.edu/e/cr2026ip) for access. Free biscuits, tea and coffee will be provided.
 - ...and yours?
@@ -43,7 +44,6 @@ We collect here the exercise groups that we know:
 ## Instructors
 
 - Blazej Baczkowski
-- Radovan Bast
 - Federico Bianchini
 - Enrico Glerean
 - Diana Iusan
@@ -77,6 +77,9 @@ We collect here the exercise groups that we know:
 
 ## Local organizers and team leads
 
-- TBD
+- Hemanadhan Myneni
+- Enrico Glerean
+- Michele Mesiti
+- and you?
 
 
