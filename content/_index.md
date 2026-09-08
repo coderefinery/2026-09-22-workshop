@@ -78,6 +78,7 @@ We collect here the exercise groups that we know:
 
 ## Local organizers and team leads
 
+- Virginia Conde
 - Hemanadhan Myneni
 - Enrico Glerean
 - Michele Mesiti
