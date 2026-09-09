@@ -34,6 +34,7 @@ To join any of the below mentioned groups, please sign up to the CodeRefinery wo
 We collect here the exercise groups that we know:
 
 - LUMI AI Factory hub, Otaniemi, Espoo, Finland
+  - In-person exercise sessions for Days 1-3. Organised with Aalto Scientific Computing. You will receive an email if you are from Finland (local registration form [here](https://link.webropol.com/s/cr092026).
 - University of Oslo, Norway
   - Local in-person exercise session for Days 1–3 (September 22-24) at UiO, with on-site helpers available. Open to students, researchers, and staff at UiO. Please register separately via the [UiO event page](https://www.ub.uio.no/english/courses-events/courses/carpentry/2026/2026-09-22-coderefinery.html) to join the in-person group.
 - University of Iceland, Reykjavík, Iceland
