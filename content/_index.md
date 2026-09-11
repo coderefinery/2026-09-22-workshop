@@ -38,6 +38,7 @@ We collect here the exercise groups that we know:
 - University of Oslo, Norway
   - Local in-person exercise session for Days 1–3 (September 22-24) at UiO, with on-site helpers available. Open to students, researchers, and staff at UiO. Please register separately via the [UiO event page](https://www.ub.uio.no/english/courses-events/courses/carpentry/2026/2026-09-22-coderefinery.html) to join the in-person group.
 - University of Iceland, Reykjavík, Iceland
+  - Local in-person exercise session for days 1-3 (Sep 22-24) at UICE, with on-site helpers available. Open to all students, researchers, and staff at UICE. Please register separately via the [UICE event page](https://english.hi.is/events/coderefinery-workshop-1) to join the in-person group.
 - Karlsruher Institut für Technologie, Karlsruhe, Germany
   - Local in-person exercise and support session for days 1-5 at the Scientific Computing Center in Campus South, Karlsruhe. Please register separately at [indico.kit.edu](https://indico.kit.edu/e/cr2026ip) for access. Free biscuits, tea and coffee will be provided.
 - ...and yours?
