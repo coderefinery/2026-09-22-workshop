@@ -1,4 +1,7 @@
-+++ template = "page-with-toc.html" title = "Questions and notes from workshop day 4" +++
++++
+template = "page-with-toc.html" 
+title = "Questions and notes from workshop day 4" 
++++
 
 This document contains the shared notes activities, some direct identifiers have been removed.
 
