@@ -99,7 +99,7 @@ Questions continued:
 - And what about security? Is it safety to put your stuff online? +1 Nowadays many enterprises try to escape using even AiI onlne but use such systems inside their servers (ollama, for example)
   - if you eventually plan to publish something, unless you are afraid that you research could be stolen (which it seems could have happened, even in recent history) doing things in public shouldn't be a problem 
   - if you are working with sensitive/personal data you need to take extra precautions, and if you are using AI you need to be in control of the infrastructure
-    - also, might not want to have less-than-good-ideas-on-afterthought (*adjective word edited) (esp on sensitive stuff out there, and let's be honest, everyone has those moments where you go oh no [not thinking about innocent blunders here, you get the drift]
+    - also, might not want to have less-than-good-ideas-on-afterthought (*adjective word edited) (esp on sensitive stuff out there, and let's be honest, everyone has those moments where you go oh no (not thinking about innocent blunders here, you get the drift)
     - on the other hand, if you have your research online early enough, it can give you more visibility (so maybe not at the very beginning of the project, but when it is half-way done?)
         - yes this is good when you feel ready for it, and lots of science is, i suppose, missing such early discussion (pros and cons exist, fo course, out of scope of this day's content) 
     - when you say 'half-baked ideas' and 'oh no' moments, are you referring to something specific in what i posted?
@@ -114,7 +114,7 @@ Questions continued:
     - Absolutely. Imperative is (as long as its clean code) simply readable, while declarative needs more thought/understanding of concepts.  
     - Also, declarative is "lazy", meaning that steps are run only if they are needed to produce an output (also intermediate) 
 
-## [Workflow solution using Snakemake]()
+## [Workflow solution using Snakemake](https://coderefinery.github.io/reproducible-research/workflow-management/#a-demo)
 
 - Does it matter what you name the variables in the curly brackets? it seems to treat file and book the same or is there a difference?
     - No, but stay consistent
