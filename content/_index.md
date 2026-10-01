@@ -77,12 +77,16 @@ We collect here the exercise groups that we know:
 - Patricia Hernández León
 - Nguyen Luong
 
-## Local organizers and team leads
+## Local organizers, notes helpers and team leads
 
 - Virginia Conde
 - Hemanadhan Myneni
 - Enrico Glerean
 - Michele Mesiti
+- Bahareh Tasdighi
+- Patricia Hernández León
+- Julia Mikhailova
+- Oskar Taubert
 - and you?
 
 
