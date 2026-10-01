@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 3 - CodeRefinery Workshop, September 22–24 and September 29–October 1, 2026</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.9/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.9/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2026-09-22-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 3</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 3" />
+      <meta property="og:title" content="Questions and notes from workshop day 3" />
+      <meta property="og:site_name" content="CodeRefinery Workshop, September 22–24 and September 29–October 1, 2026" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2026-09-22-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 3</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#icebreakers">Icebreakers</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#other-questions">Other questions</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#automated-testing">Automated testing</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#exercise-automated-testing-on-your-computer">Exercise Automated testing on your computer</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#test-design">Test Design</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#exercise">Exercise</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#demo-of-design-6">Demo of Design-6</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#automated-remote-testing">Automated remote testing</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#exercise-1">Exercise</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#feedback-for-this-morning-session">Feedback for this morning session</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#modular-code-development">Modular Code Development</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#exercise-2">Exercise</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#feedback-for-day-6-of-coderefinery-workshop">Feedback for Day 6 of CodeRefinery workshop</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#today-was-vote-add-a-o-for-all-that-apply">Today was (vote (add a o) for all that apply):</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#one-good-thing-about-today">One good thing about today:</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#one-thing-to-improve-for-next-time">One thing to improve for next time:</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day6/#any-other-feedback-general-questions">Any other feedback? General questions?</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <p>This document contains the shared notes activities, some direct identifiers have been removed.</p>
+<h2 id="icebreakers">Icebreakers</h2>
+<p><strong>What programming language(s) are you normally working with (add an o for your answer):</strong></p>
+<ul>
+<li>Python: ooooooooooooooo</li>
+<li>R: oooooo</li>
+<li>Julia: ooo</li>
+<li>C++: ooooo</li>
+<li>Fortran:o</li>
+<li>Perl:</li>
+<li>PHP: o</li>
+<li>SQL: ooo</li>
+<li>APL:</li>
+<li>Rust:</li>
+<li>Go:</li>
+<li>Bash (shell): oooooooooo</li>
+<li>Typescript/javascript: o</li>
+<li>Java: oo</li>
+<li>Matlab: oo</li>
+<li>C: o</li>
+</ul>
+<p><strong>What does testing your code mean for you? How do you test?</strong></p>
+<ul>
+<li>Write tests in Java application (Intelliji)</li>
+<li>pytest</li>
+<li>UI testing</li>
+<li>only manual tests +1 +1</li>
+<li>unit testing / feature testing</li>
+<li>get the "result product" I am looking for. A plot, statistical results.</li>
+</ul>
+<h2 id="other-questions">Other questions</h2>
+<ul>
+<li>Is the streaming also unsharp for others? My connection is fine but the streaming is unsharp
+<ul>
+<li>you might have to select "source" in the quality</li>
+<li>Thank you for the tip! It's better now, I changed the quality (which only works when I deactivate half screen/full screen I noticed) and refreshed the page.
+<ul>
+<li>mine is fine +1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="automated-testing"><a rel="noopener external" target="_blank" href="https://coderefinery.github.io/testing/">Automated testing</a></h2>
+<p>:::info</p>
+<h1 id="exercise-automated-testing-on-your-computer">Exercise <a rel="noopener external" target="_blank" href="https://coderefinery.github.io/testing/locally/">Automated testing on your computer</a></h1>
+<p>Exercise Local-1: Set up the example and test, run it and break it to see what happens
+:::</p>
+<p>Questions about the exercise:</p>
+<ul>
+<li>
+<p>in my case the test didn't pass</p>
+<ul>
+<li>What is the error you get?</li>
+</ul>
+</li>
+<li>
+<p>Done in shell (content removed after issue was fixed). 1. I passed the first 3 tests. But I could not catch up with the rest of the exercises because I had to travel. I'll try to continue during lunch break. :-) 2. Update: I successfully ran the tests (3 passed, 1 failure &amp; 2 passed). <strong>QUESTION: what is better, conda or .venv?</strong> So, I am trying to re-run the tests in Colab now, both with conda and .venv. [Off topic: why am I thinking of running the tests on qBraid now?] --&gt; Existential question: is it better to learn shell coding or else, and why? PS: I am using Duck.ai as assistant now (it's a nice surprise), and interestingly it understands its own failures and is kind of good at ´self-reasoning´. I am trying to refine my prompt engineering skills and train it to understand both chain-of-thoughts (human-user limitations and model limitations/failures), but I am not very satisfied to be honest. It would be cool to kind of see who learns faster, me or the model/s. Wild, innit? I hope the lecturers won't get shocked. My approach could be useful for educational purposes for newbies or stuff. CAN SOMEONE PLEASE TELL ME IF I WAS SUPPOSED TO DO FURTHER TESTS? Sorry for disrupting. By the way, if AI models will become good enough to teach people how to learn programming, will all lecturers be soon jobless? :-) Kidding. I like to add some suspence/thrill at times.</p>
+<ul>
+<li>Your test did pass at first, but you are getting a host of other error messages
+<ul>
+<li>So, what to do?
+<ul>
+<li>The command you can copy and paste to the terminal is only "pytest -v exapmle.py" (without the '$'). The rest of that cell is the output you can get.</li>
+<li>You might need to activate the "coderefinery" conda env, see installation instruction (https://coderefinery.github.io/installation/conda/)
+<ul>
+<li>What I think went wrong is copy-pasting the command together with the output into the terminal (only needed to copy <code>pytest -v example.py</code>)</li>
+<li>i think i have miniconda &lt;- this is fine
+Very strange, now it even doesn't find pytest((
+something very wrong in my system</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>pytest -v example.py
+bash: pytest: command not found...
+Failed to search for file: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer.
+</code></pre>
+<ul>
+<li>But running this <code>conda activate coderefinery</code>, and then<code>pytest -v example.py</code> works?
+<ul>
+<li>
+<p>nothing works unfortunately, whites files not found</p>
+</li>
+<li>
+<p>failed to search for file: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer.</p>
+<ul>
+<li>Please make sure you have created the file example.py (in the exercise), then check that you are in the same directory as the example.py file
+<ul>
+<li>yes , there is a file and i am in the same directory, everything is perfect but pytest doesn't work
+<ul>
+<li>When you run <code>conda activate coderefinery</code>, do you see (coderefinery) on the next line? (does the env gets activated?) Also try running <code>ls example.py</code>, check that you can read the file and it looks okay, please.</li>
+<li>Oct  1 10:34 example.py file exist and it was first as you said tested, i change + into minus only_. when i give command :conda activate coderefinery, information that the file didn't found</li>
+<li>gives "command not found"
+<ul>
+<li>
+<p>I suspect that something is wrong/missing with the conda environment. You could just try running test without the envrironment (<code>python3 -m pytest -v example.py</code>). Otherwise, check that the 'coderefinery' environment exists, deactivate, activate again maybe? Sorry, a bit hard to help with this without seeing your machine... If you have a local IT person, I would ask them for help with this :)</p>
+</li>
+<li>
+<p>Are you on Linux/Mac? If so, did you do the 'source'? (https://coderefinery.github.io/installation/conda/#activating-the-software-environment)</p>
+<ul>
+<li>Now i am installed everything and it works! It as a pity that it tooks so long and i passed exercise
+<ul>
+<li>Ah, so nice to hear! :) Sorry it took so long. You can try the exercises later on your own as well</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>ok, i will do, thanks</p>
+<ul>
+<li>
+<p>I used a Colab notebook, added %%writefile example.py at the start, then next cell !pytest -v example.py and test gave a pass OK.   Colab maybe not the ideal environement for this, but can't do better now. Is the result realiable?..</p>
+<ul>
+<li>I am not very familiar with Colab, but it looks like it should give you a Linux virtual machine (runs in Google cloud), so the result is reliable. All good :)
+<ul>
+<li>
+<p>Which would be the best/ideal environment please? I also was thinking about Colab and simply Shell.</p>
+</li>
+<li>
+<p>so this comes from my environment, not from anywhere else: I assume this is the descripton of the colab env: platform linux -- Python 3.13.15, pytest-8.4.2, pluggy-1.6.0 -- /usr/bin/python3 // cachedir: .pytest_cache rootdir: /content plugins: anyio-4.15.1, typeguard-4.6.0,  // langsmith-0.12.5</p>
+</li>
+<li>
+<p>Yes, all the output is the specifications of the google colab cloud environment (your session)</p>
+<ul>
+<li>yes, double checked that, useful</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I  tried to define floats in Python, but did not find a way, like in C/C++, is there a way at all?</p>
+<ul>
+<li>sorry I'm not so familiar with C, do you mean you want to declare your variable type? Or do you want to check that a variable is a certain type? Python doesn't need the initial variable definition like C or Fortran, but there are several ways you can ensure your variable is a float (for example, wrapping it with <code>float()</code>). If you are defining it as the input of a function, you could explicitely declare the type (I think it is called type annotation), but this is not needed.</li>
+<li>in python variables in the code do not have a type. It feels <em>wrong</em> if you come from a Java/C environment where everything needs to be declared with a type.</li>
+</ul>
+</li>
+<li>
+<p>what is this? "Design-2 / Solution:  # What does this last test tell us? assert count_word_occurrence_in_string('AAAAA', 'AAA') == 1" &gt; because AAAA does not include whole word (space)AAA(space)? shouldn't that be == 0?</p>
+<ul>
+<li>It does not assume spaces ('AAA' not ' AAA '), so AAA fits inside AAAAA once. But you can design the test differently to include the spaces if you want
+<ul>
+<li>That's not how the split function works though. By default, it uses white space as a delimiter, so it should return 0.
+<ul>
+<li>Right. Sorry, I am wrong. The other way around. (so the question was there to make us think why the test will be failing?)
+<ul>
+<li>so the one in the solution "==1" gives a fail, but when I change the test to ==0 it passes
+<ul>
+<li>I am also a bit confused now, becaue R and julia examples are different. I will highlight this to the lesson maintainers, and get back to you. Thank you for pointing this out!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="test-design"><a rel="noopener external" target="_blank" href="https://coderefinery.github.io/testing/test-design/">Test Design</a></h2>
+<p>:::info</p>
+<h2 id="exercise">Exercise</h2>
+<p>-&gt; https://coderefinery.github.io/testing/test-design/#pure-and-impure-functions</p>
+<p>Design-1 - 5 , try whichever exercise you are interested in , you can also try 7-10, but they are a little more complex :)</p>
+<p>Design 6 will be demonstrated after the break</p>
+<p>:::</p>
+<h2 id="demo-of-design-6">Demo of <a rel="noopener external" target="_blank" href="https://coderefinery.github.io/testing/test-design/#test-driven-development">Design-6</a></h2>
+<h2 id="automated-remote-testing"><a rel="noopener external" target="_blank" href="https://coderefinery.github.io/testing/remotely/">Automated remote testing</a></h2>
+<p>Your questions here:</p>
+<ul>
+<li>
+<p>With the test examples is it possible to add some fortran examples?</p>
+<ul>
+<li>Thank you for asking. We would like to do that, but were lacking the experts to work on it. If you have suggestions, please send an Issue / Pull Request: https://github.com/coderefinery/testing/tree/main . It actually has been a long standing open issue: https://github.com/coderefinery/testing/issues/116</li>
+</ul>
+</li>
+<li>
+<p>What is the github actions tab for? I haven't seen or worked with it before</p>
+<ul>
+<li>its basically for automating tasks in GitHub.</li>
+<li>GitHub can run "workflows" for you, that you define in yaml syntax. You can do <em>many</em> things:
+<ul>
+<li>create static websites and host them on github pages (e.g., with sphinx, as demonstrated yesterday in the documentation lesson)</li>
+<li>as we do today, run the test suite</li>
+<li>format (remove excess whitespace and make your code automatically conform to a set line length e.g. 100 chars) and lint your codebase (i.e. run static analysis on your code to find errors)
+<ul>
+<li>for the formatting, it can also re-format and make a pull request to your repository with the formatted code.</li>
+</ul>
+</li>
+<li>you could do basically anything that one can do on command line, it is a sequence of command line commands</li>
+<li>and very importantly, many "actions" are available in a marketplace that might solve a problem you have, or perform a task you would like to do</li>
+<li>GitLab CI/CD does similar things</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>:::info</p>
+<h2 id="exercise-1">Exercise</h2>
+<p>Try out <a rel="noopener external" target="_blank" href="https://coderefinery.github.io/testing/remotely/#automated-testing-remotely">exercise CI-1- Create and use a workflow on GitHub or a pipeline on GitLab</a></p>
+<p>:::</p>
+<p>Questions continued:</p>
+<ul>
+<li>Is there original in GitHub that we fork - a link to that?
+<ul>
+<li>For python, you can fork this repo (there is R version too): https://github.com/AaltoRSE/PyTestingExample</li>
+</ul>
+</li>
+<li>what is wrong: when i push it gives error failed to push some refs to origin
+<ul>
+<li>is in repository branch not main??
+<ul>
+<li>you might have to pull first: github has created a workflow file in the repository for</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="feedback-for-this-morning-session">Feedback for this morning session</h2>
+<p>We will continue with modular code development after a one hour break. Please let us know how this session felt for you, by adding a <code>o</code> for your answer below.</p>
+<p>This  automated testing session was:</p>
+<p>too fast:o
+too slow:
+right speed:oo
+too slow sometimes, too fast other times:ooo
+too advanced: o
+too basic:
+right level:o
+I will use what I learned in this session:ooo
+I would recommend this session to others:oo
+I would not recommend this session to others:o</p>
+<p>Anything else you would like to say about this session:</p>
+<ul>
+<li>difficult entry for a first timer but i see the value and will gravitate towards this, didn't expect to understand everything but still got a good general framework on what this is about and how to modular-way/structurally begin to teach myself towards working this way..</li>
+<li>10 minutes wasn't quite enough for the exercises +1
+<ul>
+<li>which ones? The first batch in the "Test Design" part of the lesson or the github actions?</li>
+</ul>
+</li>
+<li>the time for the first excercises were enough, but the last one was not enough, but great cases you have here, happy to learn!</li>
+<li>The first exercise (automated testing on your computer) i had enough time, the second (test design) felt rushed, and the third (automated testing remotely) no way near enough time.
+<ul>
+<li>thanks for the feedback!</li>
+</ul>
+</li>
+</ul>
+<h2 id="modular-code-development"><a rel="noopener external" target="_blank" href="https://coderefinery.github.io/modular-type-along/">Modular Code Development</a></h2>
+<p>:::info</p>
+<h2 id="exercise-2">Exercise</h2>
+<p>Look at the <a rel="noopener external" target="_blank" href="https://coderefinery.github.io/modular-type-along/starting-point/">starting point</a> and think about what you would do to improve the code.</p>
+<p>If you want you can clone the code: https://github.com/coderefinery/modular-type-along-exercise</p>
+<p>:::</p>
+<p>Your questions here:</p>
+<ul>
+<li>
+<p>We have to start testing this notebook?</p>
+<ul>
+<li>Testing a notebook is hard! But we can try something. Testing will not be (unfortunately) the main goal of the lesson, but we will keep discussing testability throughout the lesson.
+<ul>
+<li>I am brainstorming on the code cell ...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Where are the notes from earlier today? They seem to have disappeared. +1</p>
+<ul>
+<li>They have been archived: https://hackmd.io/@coderefinery/archivedchats</li>
+<li>Later they will be available with notes from other days at https://coderefinery.github.io/2026-09-22-workshop/questions/</li>
+</ul>
+</li>
+<li>
+<p>Too fast, I just cannot keep the pace on github. Would be lovely to have a documentation of how the lecturer is moving on github. I did not understand anything. What are we doing? We were supposed to clone or fork the repository. But I totally lost all the next steps. And I don't know how to connect github to Coderefinery either.+1 Now I am somewhere on crisp, my God (I am looking for the Coderefinery thing on github but I didn't manage to literally see what the lecturer did). +1</p>
+</li>
+<li>
+<p>The same to me, very quick +1</p>
+<ul>
+<li>try to follow again, the github bit was primarily a recap of past things</li>
+<li>the instructors just made a small recap, you can find the link to the repository here: https://github.com/coderefinery/weather-analysis-exercise/tree/main</li>
+</ul>
+</li>
+<li>
+<p>Please, explain what we are goingh to do, we check in the local directory that test are working, should we do it in the repository?</p>
+</li>
+<li>
+<p>What is the AIM?</p>
+</li>
+<li>
+<p>There is np clear aims, steps +1</p>
+<ul>
+<li>Making the example code more modular. See https://coderefinery.github.io/modular-type-along/exercise/#coding-track</li>
+<li>Indeed there are no steps in the materials, <strong>we suggest to lean back and watch and if you want to suggest things for the instructors to implement</strong>. +1</li>
+</ul>
+</li>
+<li>
+<p>The script shall be run on shell or shall we opt for the github repository option. And if the latter, how do we proceed with integrating it with Coderefinery etc? I give up. I will ask an AI assistant to help me have both options set up. I don't know even how to start. It's pointless to follow the rest at this point. After trying to clone the repository you gave us, I ended up here somehow: <img src="https://" alt="" /><img src="https://notes.coderefinery.org/uploads/6eb2fce9-533d-4e0b-9728-9995dee28e9b.png" alt="" />. Can you please help me understand the Coderefinery whatsoever integration on Github once we clone the repository? --&gt; I got it, the Coderefinery option is not available (for me). Thanks.</p>
+</li>
+<li>
+<p>Is this correct?</p>
+<ul>
+<li>yes, it is correct. That is in case you want to follow and run things in your computer, using the terminal. Once you do that, you should have everything you need to start playing around with the repository and do modifications to improve it.</li>
+<li>If you want to use Github instead, then you could do similarly like previous week (create an issue with the modification you would like to try/add, create a branch to work on it, create a PR when you think it is ready to merge :) ). The goal of this exercise is that you learn and think ways of adding modularity to your code, not so much that you create them now for the lesson (compared to first week). That is why it is perfectly fine to sit back and follow the modifications that the instructors are doing, and why they are working on them a bit fast.</li>
+<li>please tell us if there is something specific of those modularity-related ideas that is confusing or you would like to understand more</li>
+</ul>
+</li>
+<li>
+<p>Follow along locally or watch. If you would like to run the exercise on your own computer, clone the example repository:<a rel="noopener external" target="_blank" href="https://github.com/coderefinery/weather-analysis-exercise/tree/main">Weather analysis exercise repository</a>. In a terminal, run:</p>
+</li>
+</ul>
+<pre><code data-lang="bash">git clone https://github.com/coderefinery/weather-analysis-exercise.git
+cd weather-analysis-exercise
+conda activate coderefinery
+</code></pre>
+<ul>
+<li>
+<p>As far as I understood, the best approach is to work locally (I just panicked because I did not understand that the Coderefinery option on Github was available just to the lecturer - How can we get access to this integration btw?). I actually was able to get the plots on Colab as well after all. (Colab could be useful since it combines Gemini - although I do not trust that much Gemini for coding yet).</p>
+<ul>
+<li>sorry, it seems that we lost some of the notes and part of the answers to your question. You can still follow along, the instructors are just demonstrating things one could do to improve that repository and make it more modular (but there are many many options). You can also take a look at that repo (or one that you have for example) and try to think how could you  make it more modular :) At the end of the exercise there are suggestions that can apply to any repository: https://coderefinery.github.io/modular-type-along/exercise/#coding-track</li>
+</ul>
+</li>
+<li>
+<p>Please do not give up. Lean back and watch what the instructors are doing. In general the idea is that we have an example code and want to make it more modular. There are many ways to do that so the instructors are chosing steps and implementing them on stream. Right now they are working in a python file and work on introducing functions to not write duplicate code for different inputs</p>
+</li>
+</ul>
+<p><strong>To follow along with the history : https://github.com/coderefinery/weather-analysis-exercise/tree/main</strong></p>
+<p>:::warning
+Sorry, we lost some of the notes, please ask again if something is unclear below :heart:
+But please know that this is also the ideal time to lean back and watch. You can try by yourself outside of the workshop and we are happy to help with any issued that are coming up also then via support@coderefinery.org
+:::</p>
+<blockquote>
+<p>Read more about <a rel="noopener external" target="_blank" href="https://coderefinery.github.io/modular-type-along/encapsulation/">encapsulation</a></p>
+</blockquote>
+<h2 id="feedback-for-day-6-of-coderefinery-workshop">Feedback for Day 6 of CodeRefinery workshop</h2>
+<p>:::success
+In the morning we covered automated testing and modular code development in the afternoon.
+Modulare code development lesson is the place where everything learned in the workshop comes together. If it went all a bit to fast, please know that we have the recordings available on YouTube in a bit (and you can re-watch on twitch still for 7 days). Feel free to come back to it and try yourself also outside of the workshop; contact support@coderefinery.org if you have any open questions. One possibe solution on making the code more modular can also be found here: https://coderefinery.github.io/modular-type-along/solution/</p>
+<p>You can find all links from the concluding remarks here: https://github.com/coderefinery/workshop-outro
+:::</p>
+<h3 id="today-was-vote-add-a-o-for-all-that-apply">Today was (vote (add a <code>o</code>) for all that apply):</h3>
+<p>too fast:o
+too slow:
+right speed:oooo
+too slow sometimes, too fast other times:o
+too advanced:ooo
+too basic:
+right level:oo
+I will use what I learned today:ooo
+I would recommend today to others:oo
+I would not recommend today to others:o</p>
+<h3 id="one-good-thing-about-today">One good thing about today:</h3>
+<ul>
+<li>Got good pytest experience as have not used it earlier at all.</li>
+<li>I better understand my weaknesses and limits (from the theoretically point of view, visualization limits I guess). I'll start a free Harvard course right now (https://cs50.harvard.edu/python/). I feel stupid.
+<ul>
+<li>I've been learning and using python for 7 years now, I still feel stupid very often. Don't get discouraged! It will definitely get easier :)
+<ul>
+<li>Thanks. The more I study, the more I feel stupid somehow. ^^ +1 :)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="one-thing-to-improve-for-next-time">One thing to improve for next time:</h3>
+<ul>
+<li>Maybe some more easy or shorter excercises would help more easlity, anyways it's easy to come back later with the videos.</li>
+<li>...</li>
+</ul>
+<h3 id="any-other-feedback-general-questions">Any other feedback? General questions?</h3>
+<ul>
+<li>
+<p>maybe better to inform beforehand that we need some background knowledge about working with git repo and bash command</p>
+<ul>
+<li>Thank you for the suggestion. Git is part of the beginning of the workshop and we did offer a shell crashcourse just before the workshop. But we could make it more clear in preparation for the lesson, that is true. Noted.</li>
+</ul>
+</li>
+<li>
+<p>Free courses and certifications for modularity?</p>
+<ul>
+<li>Could you please elaborate? :)
+<ul>
+<li>What could I study to better undertand "modular code development"? I kind of find it difficult to understand for some reason. I mean theoretically the concept of modularity is hard to comprehend to me.
+<ul>
+<li>I think you can begin with two concepts: (1) pure vs impure functions and (2) testing. If you start writing test for a pure function, i.e. function that does one thing only, you may feel very easy. Then try making the function do a bit more stuffs (make it impure) and you will see how difficult it gets to write a good test. Modular code in a nutshell is all about breaking functions into manageable chunks for better readability and testability.</li>
+</ul>
+</li>
+<li>Thanks. Makes sense to me ("into manageable chunks" especially).
+<ul>
+<li>Manageable, Readable, Reusable</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Just: Thanks a lot :D</p>
+</li>
+<li>
+<p>Excellent work all - you made me learn a lot! Thanks a million!!!</p>
+<ul>
+<li>:)</li>
+</ul>
+</li>
+<li>
+<p>I need to get an affiliation finally! Adopt me!
+:)</p>
+</li>
+<li>
+<p>welldone everyone</p>
+</li>
+<li>
+<p>Just a note for the lecturers: I could not attend most of the previous sessions except yesterday and today. It means, I will have to wait until all the sessions will be uploaded on YT basically. I had multiple webinars and courses overlapping, and other circumstances that made it impossible to properly follow the entire course. So, to conclude, I don't consider the speed of this lecture inappropriate nor the level of the webinar unreachable. (Do I remember correctly? All sessions will be uploaded on YT?)</p>
+<ul>
+<li>Yes! All sessions will be uploaded on coderefinery YT channels. Most are there already!</li>
+</ul>
+</li>
+<li>
+<p>Great work all - in some cases I would prefer the online discussion option, as sometimes you just drop out during the 6 days and takes a lot of time to try the excercises by your own, or a help line (Zoom or Teams channel that you might be able to call would be helpful.) You would more easily get back to do the real thing. Thank you all.</p>
+</li>
+<li>
+<p>I'll propose some further improvement/s to the code after all (via github). Please provide feedback. :-)</p>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2026-09-22-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

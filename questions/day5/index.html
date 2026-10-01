@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 5 - CodeRefinery Workshop, September 22–24 and September 29–October 1, 2026</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.9/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.9/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2026-09-22-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 5</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 5" />
+      <meta property="og:title" content="Questions and notes from workshop day 5" />
+      <meta property="og:site_name" content="CodeRefinery Workshop, September 22–24 and September 29–October 1, 2026" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2026-09-22-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2026-09-22-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 5</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#day-5-30-9-2026">Day 5 - 30&#x2F;9&#x2F;2026</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#icebreakers">Icebreakers</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#icebreaker">Icebreaker</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#lesson-motivation">Lesson motivation</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#other-questions">Other questions</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#how-to-document-your-research-software">How to document your research software</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#break-untill-xx-00">Break untill XX:00</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#sphinx-and-markdown">Sphinx and Markdown</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#exercise-until-xx-15">Exercise until XX:15</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#lunch-break-untill-xx-00-14-00-finnish-time">Lunch break untill XX:00 (14:00 Finnish time)</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#responsible-use-of-generative-ai-in-assisted-coding">Responsible use of generative AI in assisted coding</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#exercise-xx-35-explore-code-generation-with-a-chatbot">Exercise XX:35 - explore code generation with a chatbot</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#exercises-with-chatbots-until-xx-00-we-will-have-a-short-break-after-that">Exercises with chatbots until xx:00 (we will have a short break after that)</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#break-until-xx-12">Break until xx:12</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#feedback-for-day-5-of-coderefinery-workshop">Feedback for Day 5 of CodeRefinery workshop</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#today-was-vote-for-all-that-apply">Today was (vote for all that apply):</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#one-good-thing-about-today">One good thing about today:</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#one-thing-to-improve-for-next-time">One thing to improve for next time:</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2026-09-22-workshop/questions/day5/#any-other-feedback-general-questions">Any other feedback? General questions?</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <p>This document contains the shared notes activities, some direct identifiers have been removed.</p>
+<h1 id="day-5-30-9-2026">Day 5 - 30/9/2026</h1>
+<h3 id="icebreakers">Icebreakers</h3>
+<p>:::info
+Videos from past days are now on  <a rel="noopener external" target="_blank" href="https://www.youtube.com/playlist?list=PLM0WX67i-k9s"><strong>CodeRefinery YouTube channel</strong></a> !
+:::</p>
+<h3 id="icebreaker">Icebreaker</h3>
+<p>What (or where) will you (or do you think you'll have) for your next meal?</p>
+<ul>
+<li>Sushi!</li>
+<li>Mushrooms</li>
+<li>Risotto too!</li>
+<li>Whatever the staff restaurant has.</li>
+<li>potatoes</li>
+<li>In a restaurant, some fancy meal today</li>
+<li>I only think about smoked salmon right now.</li>
+<li></li>
+</ul>
+<p>How do you take notes?</p>
+<ul>
+<li>A gigantic google doc with snippets of things I should not forget, new stuff on top.</li>
+<li>Post-its for short term things</li>
+<li>Pen and paper mostly</li>
+<li>iPhone notes app and emails to myself (I know this is suboptimal)</li>
+<li>I'm especially interesed in how people use "notes apps" +1</li>
+<li>self-hosted NextCloud notes</li>
+<li>Hand written notes (I write literally everywhere), post-its, I try desperately to keep tracking in one single space using Notes on Mac, but generally speaking it's not kind of working. I was brainstorming on AI agents that would be able to track my notes, but it's still a work in progress thing. - Rarely I tried to record my voice; I also send notes to myself via WhatsApp too. Wild.There is still not winning strategy tracking notes/keeping a useful documentation.</li>
+<li>a bunch of markdown notes and Obsidian to visualize it (currently working on how to self-host those :)</li>
+<li>Notepad or MS Word</li>
+<li>Obsidian</li>
+</ul>
+<h3 id="lesson-motivation">Lesson motivation</h3>
+<p>Is project documentation important? Why?</p>
+<ul>
+<li>Documentation is fundamental, all I learned was by reading the manuals. Kudos to R packages docs.</li>
+<li>For communication between different users, track of progress etc</li>
+<li>It is very useful for my future self so that when I go back to a folder I see where I was, what needs to be done next, and so on...</li>
+<li>very important to self, forgetting everything if not for notes (also saves head energy)</li>
+<li>All I know is that documentation is a pure nightmare for corporations, for some reason. Without making names...</li>
+<li>Important, sure, there is so much things and work ongoing that you can come back to Docs later.</li>
+</ul>
+<p>How would you describe a useful documentation?</p>
+<ul>
+<li>Clearly and logically structured, understandable for people not familiar with the project +1</li>
+<li>it is easy to find what you are looking for</li>
+<li>Usually divided between background and working documents, relevant literature, and (as I work with EU projects) divided among different working packages or WPs..</li>
+<li>the documentation is findable by everyone</li>
+<li>for long documentations for large projects: readable by AI; putting all our documentation into NoteBookLM is what helped people here the most
+<ul>
+<li>What makes documentation readable (or not) by AI?
+<ul>
+<li>I do it as pure markdown documents. Inline did not work that well. But for me it is 1000+ pdf pages of documentation.</li>
+<li>Ideally, accessible via API, exportable as plaintext/JSON/XML/structured output</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>searchable</strong>, I need to be able to find a specific thing I am looking for within +2</li>
+<li>not hiding information, not dumbing it down, even for sake of simplicity</li>
+<li>Structured enought well, if references that helps.</li>
+<li>Has typical workflow examples, much better to start from something standard than from scratch</li>
+<li>From my personal point of view documentation should be not verbose to begin with. Concise, good formatting, perhaps we should rethink the design of documentation. I am reading very good points, indeed. [Most likely AI will handle all available notes globally in the future, but how do we protect IP (intellectual property) then? :-)]. PS: I have strong visual memory, so I'd love to have more visualization patterns I'd guess.</li>
+<li></li>
+</ul>
+<p>How can you motivate your colleagues to contribute to the documentation?</p>
+<ul>
+<li>Give them a badly documented one to work with themselves +1</li>
+<li>Try to reproduce their workflow and ask for the missing elements</li>
+<li>Checkbox in github/gitlab for new merges that documentation is added/adapted</li>
+<li>Encourage them to do it, as it is important later on.</li>
+<li>Very good question. Documentation lacks ownership and incentives :-) At least for corporations or big institutions, they should quantify the cost of lost time (it's huge annually!).
+<ul>
+<li>You can suggest turning it into a paper (ex., JOSS - journal of open source software), maybe then there is more incentive to work on it?</li>
+<li>Loss of time by writing the documentation or loss of time from not having a good documentation?</li>
+</ul>
+</li>
+</ul>
+<p>What should a good documentation look like?</p>
+<ul>
+<li>It should look like other good documentations, it should be familiar enough to be able to navigate even in an unfamiliar project +1</li>
+<li>It should look remunerative (Financial ROI)</li>
+</ul>
+<h2 id="other-questions">Other questions</h2>
+<ul>
+<li>
+<p>do you speak? i don't hear anything +1+1
+now i can hear</p>
+</li>
+<li>
+<p>Now we hear!! +1</p>
+<ul>
+<li>Great!</li>
+</ul>
+</li>
+<li>
+<p>Only now we hear</p>
+<ul>
+<li>Good :)</li>
+</ul>
+</li>
+<li>
+<p>Can you help to maintain tunneling with liscense server?</p>
+<ul>
+<li>If RSEs can help with that? It depends, sometimes yes, sometimes it depends on those who manage the license server (e.g. IT). If you are at Aalto and have these type of issues, please join our daily zoom garage.</li>
+</ul>
+</li>
+<li>
+<p>Can we save this page? This discussiona had many inputs that I would like to continue brainstorming on.</p>
+<ul>
+<li>The notes will be archieved and accessible on the Coderefinery page (https://coderefinery.github.io/2026-09-22-workshop/communication/)</li>
+</ul>
+</li>
+<li>
+<p>What are the names of the lecturers again please? (Responsible use of generative AI in assisted coding).</p>
+</li>
+<li>
+<p>Do we need real-time coding? (for the training cut-off dates issue, which is a very common limitation). We need real-time everything basically.</p>
+</li>
+<li></li>
+</ul>
+<h2 id="how-to-document-your-research-software">How to document your research software</h2>
+<ul>
+<li>what does sphinx-autodoc2/Sphinx AutoAPI do?
+<ul>
+<li>Sphinx AutoAPI and sphinx-autodoc2 are the Sphinx extenctions that can generate API documentation for python packages. It basically reads your code and turns the comments into a documentation website. Not sure how much information you want, there is a lot on Sphinx documentation page :)
+<ul>
+<li>yes, I already took a look but since I've never heard about these, wanted a human elementary summary. Thanks.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>::: info</p>
+<h3 id="break-untill-xx-00">Break untill XX:00</h3>
+<p>:::</p>
+<h2 id="sphinx-and-markdown">Sphinx and Markdown</h2>
+<p>:::warning</p>
+<h3 id="exercise-until-xx-15">Exercise until XX:15</h3>
+<p>Exercise/follow along link: https://coderefinery.github.io/documentation/sphinx/#exercise-setting-up-a-sphinx-project
+:::</p>
+<ul>
+<li>...I just only installed Miniforge3
+<ul>
+<li>:clap:</li>
+</ul>
+</li>
+<li>So I could have my webpage with username.github.io?
+<ul>
+<li>Exactly! This is why we host coderefinery.github.io like this so that each repository has its own mini-website.</li>
+<li>A good template for researchers: https://github.com/academicpages/academicpages.github.io</li>
+<li>There is also <a rel="noopener external" target="_blank" href="https://docs.gitlab.com/user/project/pages/">GitLab pages</a>  and even <a rel="noopener external" target="_blank" href="https://docs.codeberg.org/codeberg-pages/">Codeberg pages</a> if you want your git-based website to be in the EU.</li>
+</ul>
+</li>
+<li>Is GitLab free of charge?
+<ul>
+<li>Free for individual users (limits on storage)</li>
+</ul>
+</li>
+</ul>
+<p>:::warning</p>
+<h2 id="lunch-break-untill-xx-00-14-00-finnish-time">Lunch break untill XX:00 (14:00 Finnish time)</h2>
+<p>:::</p>
+<h2 id="responsible-use-of-generative-ai-in-assisted-coding">Responsible use of generative AI in assisted coding</h2>
+<p>https://coderefinery.github.io/coding-with-ai/</p>
+<ul>
+<li>How do you use AI? I "hate" CSS so I am very happy that generative AI can take care of that :)
+<ul>
+<li>To do stuffs that (1) I can judge the output or (2) I don't care much about the output (my personal website for example)</li>
+</ul>
+</li>
+<li>...Everybody use AI but not everybody say that. I mean in the papers among the scientists. Students are writing their PhD in perfect language with chaGpt. That is the question. Themselves or not themselves</li>
+<li>GPT doesn't create something new it borrows from what he has gained from other people, so called plagiarismus))
+<ul>
+<li>+1</li>
+<li>-1</li>
+<li>For what? If you think of anyone who uses a search engine as an AI user, then yes, since this is pretty much impossible to avoid.
+<ul>
+<li>Maybe some, but they are then not writing a PhD thesis (themselves).
+<ul>
+<li>That is the question: if one chinease write his PhD thesis in perfect german and the supervisor said: he did it not himself, i know his level of language. Is it plagiarismus or not? Even not plagiarismus but somehow cheating from his point of view.
+<ul>
+<li>One issue is that "AI" can be many things and General Purpose AI Models (like llms) can do many things: a translation is not necessarily plagiarism (plagiarism is using someone else's work without acknowledging it). It becomes plagiarism when the statements that are written (with or without AI) claim originality when they are actually taken from other's work without citing it.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Regarding writing with AI, there are several approaches to it too. If directly using it to generate text, then it is plagiarism as pointed out above. If used afterwards to improve the grammar and language in general, then it can be fair use but of course the line is not always clear. I personally like to use it to discuss specific word choices, since I am not a native English speaker and don't know the nuances of the language (akin to asking advice to a native speaker, without giving my actual text). This is not a productive application of AI though, but I feel that passing the actual text kills a lot of my creativity (of course LLMs will generate a text with a perfect English compared to my writing, but that is not my goal).</li>
+<li>sure, but then the AI written english, even if you simply ask it to "finetune" your work, ends up sounding so mechanical. Very soon we will have thousands of work that sounds exactly the same! I personally find it very mechanical and monotenous +1
+<ul>
+<li>definitely agree! My point was that there are ways to find a balance, but they are not so efficient (meaning people need to be willing to put the time, which usually goes against the motivation of using AI in the first case)</li>
+<li>Yes! and i think that is the issue. i feel like we have lost the patience to stare at a blank word document and think before writing something. it is so easy to ask AI to generate something +1
+<ul>
+<li>I guess it became a question of whether you like writing (so you prefer doing it yourself first) or not (then AI is very tempting)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Great points and perspectives everyone. Yesterday we mentioned "is it plagiarism / IPR infringement if we reuse print("hello world")"? I think what everyone is trying to figure out where the line is between "fair use" (in the USA sense, we have a comment in yesterday's materials: https://coderefinery.github.io/social-coding/software-licensing/) and "IPR infrengment"... and unfortunately court cases are not really taking a clear stance on this.</li>
+</ul>
+</li>
+<li>What tools do instructors use for AI coding agents?
+<ul>
+<li>A bit of everything (claude code, codex, pi). I have tried also local models like Qwen 3.8 which we have at Aalto and it works quite well.</li>
+<li>This can become a full-day session ...</li>
+<li>chatgpt, github co-pilot.</li>
+</ul>
+</li>
+<li>I am using AIs with subscription through my employer due to safety issues. As these AIs are approved by the employer, I feel more confident there will be no sensitive data leaks, as well as we get support from the employer regarding its usage. We started with CoPilot but due to intensive coding demands at our firm -&gt; moved to Claude. I like it ... :) / Thanks for the warning. I am definitely staying on the safe side. Luckily I am not doing high level coding nor working with legally sensitive data; more like we have a lot of data due to long-term monitoring programs...
+<ul>
+<li>Anthropic has had security issues in the past. If your employer believes their security assurances are good enough for their purposes than that is their responsibility. Depending on what you mean by "sensitive" data, I would still be careful what you share with them.
+<ul>
+<li>Unfortunately every provider of frontier LLMs has had one (or more) security breaches.... it seems that they are not that good when it comes to security. :)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="exercise-xx-35-explore-code-generation-with-a-chatbot">Exercise XX:35 - explore code generation with a chatbot</h2>
+<p>https://coderefinery.github.io/coding-with-ai/introduction/
+(scroll to the bottom)
+:::success
+Go to https://duck.ai (no account needed) and try the following:
+Ask: “Write a Python function to calculate the standard deviation of a list”
+Look at the response. Does it:</p>
+<ul>
+<li>
+<p>Use a built-in library or implement from scratch?</p>
+</li>
+<li>
+<p>Handle edge-cases (empty list, single element)?</p>
+</li>
+<li>
+<p>Include documentation?
+Now ask: “What assumptions does this code make? What could go wrong?”
+Finally, ask: “How would you test this function to ensure it’s correct?”
+Share your reflection in the collaborative note document.<br />
+:::</p>
+</li>
+<li>
+<p>I did it twice and got two completely different implementations :D</p>
+<ul>
+<li>EH. I tried the same, indeed. At least the math looks correct'</li>
+<li>I got the same thing twice</li>
+</ul>
+</li>
+<li>
+<p>For me it did not use a builtin library. Which one should it be?</p>
+<ul>
+<li>statistics.pstdev(values) would do it as a built in solution</li>
+<li>in my case, it didn't use it but it suggested it afterwards as an alternative
+<ul>
+<li>did you have to ask it? I sometimes need to mention "I want to reuse built in functions as much as possible and limit the amount of code" otherwise it is so verbose...</li>
+<li>I didn't ask for it, but when I ask for the assumptions and what could go wrong, it added a last comment saying that for production code that builtin method was a good alternative. Interesting how different the answers can be with same questions!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can you change the language model it uses in duck.ai?</p>
+<ul>
+<li>I think that only when you start a new chat you can pick a certain language model. So in different chats with different models you can try the same prompt for example. Note that after a while it goes to "you have used all your free credits for today"</li>
+</ul>
+</li>
+<li>
+<p>Small things matter, so it’s important to check your work carefully while coding. Even a small functions can go wrong if the input is empty, the data is bad, or the assumtions are wrong. Testing is improtant part of the code writing, and good testing plan or aims targeted are important.</p>
+</li>
+<li>
+<p>I wonder if the check it did is real?</p>
+<ul>
+<li>This is a very important point: some LLMs are not connected to tools (e.g. running a python command and show the output) but they just generate the results based on the LLM probabilities. I guess you might have come across that when you ask "how many Rs are in strawberry" it says (or used to say) 2. I am not sure if duck.ai runs python code snippets, I think not.</li>
+</ul>
+</li>
+<li>
+<p>I don't understand how can we pick another model (or if it is even possible with this tier)? Never mind, you cannot. You must start a new chat.</p>
+<ul>
+<li>Yeah I also had to start a new chat, you can't change mid-chat</li>
+<li>Yes, since duckduckgo is just routing your queries to another service, you can't change the model mid-chat</li>
+<li>Being locked into one model is likely because different models tend to use slightly different API methods, and often enough there is no 1:1 translation between specific APIs. E.g. some APIs have features that aren't implemented by others (like API specific tool_calls (web-search)), so duckduckgo decided not to go to the trouble to translate between them and locks the model for eahc conversation.
+<ul>
+<li>Thanks. I think that big AI should hire the entire global population in order to boost AI literacy.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What models did you guys pick? I started with GPT 5.6 Luna.</p>
+<ul>
+<li>GOod question. If it's just a one liner (my use of duck.ai) it does not matter much, but with more complex things I have seen that gpt-oss tends to hallucinate. Nice that they have Mistral which is a European alternative (but not the best for coding)</li>
+</ul>
+</li>
+<li>
+<p>Can AI assistants pick themselves the best model based on the prompt?</p>
+<ul>
+<li>Some tools (like claude code) do "model routing". I am unsure how common this is.</li>
+<li>Essentially it's an additional call to a model asking what's probably a good model for the following task and then giving descriptions of the models. Can be useful to save some costs for low effort requests, but can also backfire.</li>
+</ul>
+</li>
+<li>
+<p>This time I tested Claude Haiku 4.5 and I modified settings.</p>
+<ul>
+<li>was it better?
+<ul>
+<li>Not sure. This model sounds insecure. Strange.
+<ul>
+<li>:D like emotionally insecure or just not-secure in the cybersecurity sense
+<ul>
+<li>It asked questions back that it should have been able to determine quite easily on its own. Hm.
+<ul>
+<li>I see. Well at least it asked instead of assuming :)
+<ul>
+<li>Safety first.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="exercises-with-chatbots-until-xx-00-we-will-have-a-short-break-after-that">Exercises with chatbots until xx:00 (we will have a short break after that)</h3>
+<p>https://coderefinery.github.io/coding-with-ai/scenario-full-control/#exercises</p>
+<ul>
+<li>
+<p>I get a very long function when I ask to do the validation also</p>
+<ul>
+<li>Yes this is one thing I don't like because it can take longer to review it rather than what I would have done myself with good documentation and a bit of patience. I am unsure how some are "vibe coding" everything (companies in production environments) and ... hope for the best? or do they spend days reviewing all those thousands of lines of code?
+<ul>
+<li>If you mostly vibe-code front-ends a lot of the risk is pushed towards the user side of things, as bugs tend to leak individual credentials instead of access to the system db.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I am not sure if I defined the problem properly (as I dont know Python?), however I get an answer that the code crashes due to len(data)=0 :D</p>
+<ul>
+<li>same +1</li>
+<li>Well, that "crash" could be intentional during Validation. Failing Validation commonly raises a "ValidationError " which makes the code error out, but that is actually expected.</li>
+<li>So it tells you what error it expects when you would try to run the code? Is that what you asked for?</li>
+</ul>
+</li>
+<li>
+<p>also for problem 2, loads of code... I am not sure if it is right or wrong</p>
+<ul>
+<li>As a suggestion: Ask it to use pydantic to define the schema and have pydantic do the validation. The code should get cleaner, at the cost of introducing a dependency
+<ul>
+<li>Thanks for the tip! But then I would need to understand what pydantic does to review the code :) (I am R person with very basic python skills)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>..</p>
+</li>
+</ul>
+<p>:::success</p>
+<h2 id="break-until-xx-12">Break until xx:12</h2>
+<p>Remember to stretch your muscles and drink some water/tea/... :)
+:::</p>
+<p>Your favourite IDE / tools?</p>
+<ul>
+<li>
+<p>VS code with integrated Github Copilot+</p>
+</li>
+<li>
+<p>VS code, but I never tried it with AI. How do you enable it?</p>
+<ul>
+<li>You install an extension (I used github copilot plugin) and then when you log in with your github account you have some free credits (but not too many). I am unsure though of which files from the local folders are sent to the remote provider, so I don't use it for research purposes.
+<ul>
+<li>The instructors just mentioned a bit of this :)</li>
+<li>There are also some instructions in the docs if you want to start using github copilot: https://coderefinery.github.io/coding-with-ai/scenario-ide-integration/#setting-up-github-copilot</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Did one of the instructors mention SETH?</p>
+<ul>
+<li>I think he meant "Zed" but I will ask
+<ul>
+<li>Thank you. I accidentally cancelled something, sorry! https://zed.dev/</li>
+</ul>
+</li>
+<li>What are the advantages of using Zed vs. other editors? Maybe they already mentioned it but I didn't hear it. Thanks :D
+<ul>
+<li>Good question, I will raise it to the instructor since he is a user.
+<ul>
+<li>AM: Some advantages - the AI "plugin" comes by default and fully open source, it supports a protocol called ACP (Agent Communication Protocol), also a bonus written in Rust. VSCodium the fully open version of VsCode cannot run GitHub Copilot for example.
+<ul>
+<li>Thanks! I will check it, sounds promising. I never got to start using VScode, sounds like a nice alternative</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I used OpenClaw/InstaClaw at some point. I need a proper roadmap to start seriously testing AI agents for different purposes and use cases. Any advice is more than welcome.</p>
+<ul>
+<li>I wish for similar roadmaps or systematic tests. I feel that people just catch the latest hyped tool/model and there is nothing systematic like same prompt over the years -&gt; is the output quality better? (or maybe there is but I have no idea, please share links if you know)</li>
+</ul>
+</li>
+<li>
+<p>I started using Claude Code, but then when I realised my institution started offering an API endpoint with open weight models I started using OpenCode connected to it. But I don't use these tools as a "project manager", I use them as the pair programmer none of my colleagues has the patience or the time to be. Also: I have an editor open at the same time</p>
+<ul>
+<li>Very interesting! Thanks for sharing. Promoting pair programming would actually be really good rather than just "delegate everything" +1 +1</li>
+<li>Can you ellaborate a little on what you mean by pair programmer? Is it that you code at the same time, or you divide the tasks or ...?
+<ul>
+<li>It's the practice of sitting at the keyboard with another person and coding together, thinking through the problem together and throwing ideas at each other (at the first year in Uni we were doing this without knowing it had a proper name, we just thought that there were no computers for everyone)
+<ul>
+<li>Oh I see, so like an ongoing discussion about the code. Thanks!
+<ul>
+<li>It's kind of an "alternative" to code reviews. You get work done quicker than alone and you have two people that know the code well isntead of one. But it can be very tiring and a bit less efficient</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Naive question, is there any advantage of using English vs my native language (non-English) when using AI?</p>
+<ul>
+<li>It has been reported that e.g. in German some models tend to use ~50% more tokens (don't remember the exact number). I've also heard that some chinese models might work better in Chinese. But I can't tell how solid the "evidence" for this is.</li>
+<li>Another rumor from the internet, logographic languages (like chinese) are more compressed and so work better, but... well you need to know Chinese. :)
+<ul>
+<li>What about translating your prompts with AI? :-)
+<ul>
+<li>You have a good topic for a research paper. Thanks us in the acknowledgments :)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Most languages are underrepresented, isn't it? English monopoly I'd guess.</li>
+<li>Thanks everybody for the answers, very interesting :D</li>
+</ul>
+</li>
+<li>
+<p>A good idea for any government would be to purchase AI memberships (i.e. unemployed, disadvantaged categories, etc) to boost AI literacy and favor the transition to post-labor economics. I always insist on this side because I still don't see any proper policy going on atm. This is paramount.</p>
+<ul>
+<li><del>Many institutions are doing this, in Europe.</del> Many institutions, AFAIK, are offering some self-hosted open-weight models.
+<ul>
+<li>Good to know. Awesome. We need to do more tho (evidently).
+<ul>
+<li>By the way: I am both astonished and apalled looking at what AI can do. Are we going to really transition to post-labor economics? Can we really trust these systems? Do they really work well enough that we can forget about them? hmmm...
+<ul>
+<li>we have a thread in coderefinery zulip chat about this... about 10000 lines long :D Welcome to zulip chat if you wan to rant, I mean, discuss https://coderefinery.github.io/manuals/chat/
+<ul>
+<li>I want to join, defo.</li>
+<li>Some literature https://www.goodreads.com/en/book/show/59801798-blood-in-the-machine https://thecon.ai/</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(apologies for the drift of topic, but yes it is shocking that because <em>everyone</em> uses whatsapp, then Meta can just push their AI chatbot to all whatsapp users, while I would rather have a local government or EU commission to push such app in everyones phone if it must happen....)</li>
+<li>Purchasing services on a massive scale from foreign companies that have a questionable track record when it comes to ethics or adherence to local laws probably raises questions of sovereignty.
+<ul>
+<li>Indeed. And then they partner with microsoft or meta :')</li>
+<li>It could be "cheaper" (and less "committal") in the short terms to make agreements with "BigAI" than to buy your infrastructure and host open weight models.
+<ul>
+<li>In the short term certainly, since they are currently still heavily subsidizing AI use. In the long term you give them a lot of data, which widens the gap between closed and open models, which would make you increasingly dependent on them.
+<ul>
+<li>But open weight models can be order of magnitude cheaper to use while at the same time being good enough for most tasks (I get decent work done with DSv4.0 flash)</li>
+<li>I am not sure the interaction with the users is (like RLHR (?)) that effective at improving the models (it seems very efficient at stealing ideas from the scientific communities though).</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>We should probably discuss about datasets at some point.</p>
+<ul>
+<li>Like which data can be used with AI tools?
+<ul>
+<li>Yes, absolutely. And especially how can we improve the quality of datasets in the future. This is from the perspective of new AI actors in the industry (in EU). We discuss a lot nowadays about Sovereign AI in Europe.
+<ul>
+<li>GOod point, I can raise this in the end with the instructors.</li>
+<li>Yes there are two aspects -&gt; using AI for improving dataset quality, but also giving datasets to AI (especially even if you do not want to give those data to those companies training AI models).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I am mind blown that the AI agent did all that by itself. Do we even need coders anymore???</p>
+<ul>
+<li>Well, you always need human in the loop, for accountability ;)
+<ul>
+<li>Insert Homer Simpson's keyboard bird meme (pressing the "Y" key in repeat)</li>
+</ul>
+</li>
+<li>Code is read 100x or more than it is written, at least the serious projects. Also reviewing and verifying need some basic skills, at least :)</li>
+<li>The instructors will go now through some reasons why humans are still needed in the loop :) plus other reasons like the accountability point mentioned above. Reviewing code made by AI requires certain coding knowledge, and debugging is getting more and more convoluted so if something goes wrong, you cannot have a "non-coder" simply looking at it. Another AI agent can take this role, but they are not infalible.</li>
+<li>AI is intelligence. Intelligence alone can't solve all the problems: any intelligent system (be it human or AI) needs data to produce useful results. AI can't (yet) go to the world and ask the important questions or run experiments. The role of a software engineer is also to do "requirement" engineering, and even ASI would not be able to do that without being it much more integrated in all humans activities than it is today. It's still your responsibility and duty to at least state the requirements in a consistent way (and define clear testing goals)</li>
+<li>Other good reason is, in the case of scientific code, the science can get very entangled with the code (which is why many scientist learn coding in the first case). AI doesn't perform so good (for now) without continuous feedback and new input/pair coding in those cases, at least from my experience. This relates with the comment above about intelligence, just wanted to add a comment from the perspective of a scientist instead of an RSE.</li>
+</ul>
+</li>
+<li>
+<p>Will we need new types of insurances for AI agents in the near future? Considering all current and latests events...They</p>
+<ul>
+<li>Interesting idea. I guess you just gave some new ideas to insurance companies if they are reading this.
+<ul>
+<li>
+<p>I want the royalties lol</p>
+<ul>
+<li>Ideas cannot be copyrighted sorry :)
+<ul>
+<li>That's the greatest challenge ever for the AIs era. How do we truly protect human intellectual property?
+<ul>
+<li>can we even protect it at this point? :') But I definitely agree
+<ul>
+<li>We should. But the question is technically how? Let's pay people for thinking? :-)
+<ul>
+<li>Love this idea, 100% :)</li>
+<li>Not sure this is true. Human intellectual property was already lost pretty much entirely to some large companies.
+<ul>
+<li>Exactly. I have some ideas.... :-))</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Given that some AI experts think that there's a 10% chance that AI will wipe humanity, which insurance company will insure it?</p>
+<ul>
+<li>Yes and the frontiers AI companies are committing all sorts of breaches and not paying for any damages...
+<ul>
+<li>It's also a huge publicity for them.
+<ul>
+<li>Hype apart, I bet we will need new types of insurances for AI infrastructures, AI agents, next-level ASI, you name it. Clearly. (Especially GovAI/GovTech).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>...</p>
+</li>
+<li>
+<p>...</p>
+</li>
+</ul>
+<h2 id="feedback-for-day-5-of-coderefinery-workshop">Feedback for Day 5 of CodeRefinery workshop</h2>
+<p>:::success
+In the morning we covered documentation and how to publish github pages and in the afternoon we looked at responsible coding with AI. Thank you for the active discussions. The "AI lesson" is still work in progress, so any useful comment will help us improving it. Please answer the polls and questions below.
+:::</p>
+<h3 id="today-was-vote-for-all-that-apply">Today was (vote for all that apply):</h3>
+<p>too fast:o
+too slow:
+right speed:ooo
+too slow sometimes, too fast other times:o
+too advanced:o
+too basic:
+right level:oooo
+I will use what I learned today:oooooo
+I would recommend today to others:ooooooo
+I would not recommend today to others:oo</p>
+<h3 id="one-good-thing-about-today">One good thing about today:</h3>
+<ul>
+<li>Great learniing again - thanks!</li>
+<li>Very interesting topics, indeed. I enjoyed a lot.</li>
+</ul>
+<h3 id="one-thing-to-improve-for-next-time">One thing to improve for next time:</h3>
+<ul>
+<li>Sometimes Less is More.+1</li>
+<li>It would be good to have more q &amp; a with the instructors</li>
+<li>If we focus on Q&amp;A and getting further insights from the lecturers, we kind of miss the focus on the webinar itself. There is so much to be discussed, let alone to be learned that we risk to completely lose the target so to say. Maybe, we should have Q&amp;A at specific times. But I like this kind of format that allows you to interact freely.</li>
+</ul>
+<h3 id="any-other-feedback-general-questions">Any other feedback? General questions?</h3>
+<ul>
+<li>
+<p>Personally, we should probably use this platform to discuss real-life projects and build teams. Never say never. Everything is so fragmented in this digital ecosystem somehow. We never get things done. We never reach the goal after all.</p>
+</li>
+<li>
+<p>I am obsessed by Sovereign AI and tackling bureaucracy, to the point I suggested to fully delegate all bureaucratic tasks to AI, creating an entire infrastructure. But this ideas is perhaps way too grandiose. I need an audience and some feedback to reassess further. Theoretically, who needs bureaucracy? Who loves bureacracy? What's the purpose of bureacracy? Can't AI be a better Bureau at least? Faster, less biased on a long-term basis, certainly more efficient (24h/365days) and the majority of people working in public bureaus hate their jobs and hate citizens frankly speaking (this is a fact). So why not transition them to activities they actually love? We - the people/the citizens - would finally get better services and in a fraction of seconds potentially. Not in months or years or decades. Think about it.</p>
+</li>
+<li>
+<p>I believe in what I call the democratization of AI --&gt; access to supercomputers and hybrid systems should be a human right. That's the only way to avoid elite capture. More to come, stay tuned. :-)</p>
+</li>
+<li>
+<p>Last but not least, I truly believe we don't have enough futurists and visionary leaders to bring us into a bright post-labor economics era. We don't need doomerists or apocalyptic theories or extreme polarization to discuss our predictions. But change is inevitable. Robots will live with us, decisions will be taken by AI systems. There are thousands of papers out there, an infinite amout of documentation, interviews, YT material that shows why we will transition to this new way of living. Check David Shapiro on YT and give me a honest feedback. It was great to be here. See you tomorrow!</p>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2026-09-22-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
